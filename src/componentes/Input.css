@@ -1,0 +1,12 @@
+.input {
+  display: flex;
+
+  outline: none;
+  transition: background 0.3s ease;
+  width: 400px;
+  color: rgb(17, 112, 1);
+}
+
+.container {
+  align-items: center;
+}
