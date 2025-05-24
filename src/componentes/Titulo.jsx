@@ -1,7 +1,6 @@
-import "./titulo.css";
 export function Titulo() {
   return (
-    <h1 className="titulo">
+    <h1>
       Cuanto <span className="span"> dinero</span>
       <br />
       necesitas?

@@ -1,7 +1,6 @@
-import "./Input.css";
 export function Input({ funcion, value, min, max, step }) {
   return (
-    <div className="container">
+    <div>
       <input
         value={value}
         min={min}

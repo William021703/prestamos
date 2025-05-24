@@ -3,8 +3,6 @@ import { Titulo } from "./componentes/Titulo.jsx";
 import { Input } from "./componentes/Input.jsx";
 import { Buton } from "./componentes/Buton.jsx";
 
-import "./App.css";
-
 function App() {
   const [cantidad, setCantidad] = useState(30000);
   const [meses, setMeses] = useState("6 Meses");
@@ -58,7 +56,7 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <div className="bg-pink-950 w-full flex">
       <Titulo />
       <div className="btn">
         <Buton
