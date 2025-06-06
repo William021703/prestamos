@@ -59,13 +59,13 @@ function App() {
 
   return (
     <div
-      className="bg-stone-100 flex w-full h-screen items-center justify-center text font-serif 
+      className=" bg-radial-[at_25%_25%] from-white to-zinc-900 to-75% flex w-full h-screen items-center justify-center text font-serif 
     "
     >
       <div
-        className="bg-stone-100 flex flex-col w-96 h-96 items-center rounded-lg outline-0
+        className="bg-linear-to-r from-cyan-500 to-blue-500 flex flex-col w-96 h-96 items-center rounded-lg outline-0
          shadow-lg shadow-stone-500/50
-      hover:rounded-lg hover:border-4 hover:border-bg-cyan-500 transition-all duration-500 ease-in-out"
+      hover:rounded-lg hover:border-4 hover:border-bg-cyan-500 transition-all duration-300 ease fill-white drop-shadow-xl/50 animate-pulse"
       >
         <Titulo />
 
@@ -94,7 +94,7 @@ function App() {
           }}
         />
 
-        <h1 className="text-4xl my-2 hover:rounded-xl hover:border-1 hover:bg-sky-100 transition-all duration-500 ease-in">
+        <h1 className="text-4xl my-2  border-2 rounded-2xl hover:bg-sky-100 transition-all duration-500 ease-in">
           $ {cantidad}
         </h1>
         <h1 className="">
@@ -103,12 +103,12 @@ function App() {
 
         <select
           name="dropDown"
-          className="text-lg bg-stone-300 w-2xs text px-2"
+          className="text-lg bg-stone-300 w-2xs text-center px-2"
           onChange={(e) => {
             HandleMeses(e.target.value);
           }}
         >
-          <option value="6 Meses">6 Meses </option>
+          <option className="" value="6 Meses">6 Meses </option>
           <option value="12 Meses">12 Meses </option>
           <option value="24 Meses">24 Meses </option>
         </select>
